@@ -43,8 +43,8 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-  createPlatform(1100,200,100,15) 
-  createPlatform(850,300,100,15)
+  createPlatform(1050,250,100,15) 
+  createPlatform(850,350,100,15)
   createPlatform(650,450,100,15)
   createPlatform(400,550,100,15)
   createPlatform(150,650,100,15)
@@ -64,8 +64,8 @@ createCollectable("kennedi",300,100,20,0.5)
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 createCannon("right",750,1500)
-createCannon("left",100,2000)
-createCannon("top",800,1050)
+createCannon("left",100,1050)
+createCannon("top",900,1050)
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
