@@ -20,9 +20,8 @@
 		.board{
 			height: 100vh;
 		}
-		body {
-  background-image: url(");
-}
+		
+
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
@@ -51,9 +50,8 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX, newPositionY) {
+			function moveBoxTo(newPositionX) {
 				box.css("left", newPositionX);
-				box.css("top", newPositionY);
 			}
 
 			// changes the text displayed on the Box
@@ -69,9 +67,7 @@
 			var positionX = 150;
 			var points = 0;
 			var speed = 10;
-			var positionY;
-			var speedY;
-			var boardHeight = jQuery(window).height();
+		
 
 			
 			/* 
@@ -89,6 +85,7 @@
                else if (positionX < 0){
 				speed = speed * -1;
 			   }
+			  
 			};
 
 			/* 
