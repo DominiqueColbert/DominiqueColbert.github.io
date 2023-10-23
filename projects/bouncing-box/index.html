@@ -20,9 +20,13 @@
 		.board{
 			height: 100vh;
 		}
-		
-
-	</style>
+		body {
+  background-image: url("");
+  
+}	
+     
+	
+	 </style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
 </head>
@@ -78,7 +82,7 @@
 			function update() {
 			/* We want to increase the value of positionX by 10 */
 			positionX = positionX + speed
-				moveBoxTo(positionX, positionY)	
+				moveBoxTo(positionX)	
 				if (positionX > boardWidth) {
                     speed = speed *-1;
 				}
@@ -106,6 +110,8 @@
 
 
 			};
+  
+
 
 		})();
 	</script>
