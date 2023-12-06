@@ -15,40 +15,40 @@ var init = function (window) {
         window.opspark.game = {};
         var game = window.opspark.game;
         
-        ////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM SETUP ////////////////////////////
         ////////////////////////////////////////////////////////////
+
            
         // TODO 1 : Declare and initialize our variables
        var circle;
        var circles = [];
-
+    
         // TODO 2 : Create a function that draws a circle 
        function drawCircle (){
         circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
-        physikz.addRandomVelocity(circle,canvas);
+        physikz.addRandomVelocity(circle,canvas,10,10);
         view.addChild(circle);
         circles.push(circle);
        }
-    
+         
         // TODO 3 / 7 : Call the drawCircle() function 
-              /* Your Function Calls HERE */
-    }
-}       
+                            /* Your Function Calls HERE */
+          
        /* drawCircle();
         drawCircle();
         drawCircle();
         drawCircle();
         drawCircle(); */
-        
+           
     for (var loop = 0; loop <= 100; loop++){
         drawCircle();
     }
    
- 
+
     
 
-         
+      
 
     
      
@@ -87,8 +87,8 @@ var init = function (window) {
            }
             
         };
-    
-        /* 
+                 
+                                         /* 
         This Function should check the position of a circle that is passed to the 
         Function. If that circle drifts off the screen, this Function should move
         it to the opposite side of the screen.
@@ -115,7 +115,7 @@ var init = function (window) {
            
          } // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         
-        
+                 
         /////////////////////////////////////////////////////////////
         // --- NO CODE BELOW HERE  --- DO NOT REMOVE THIS CODE --- //
         /////////////////////////////////////////////////////////////
@@ -129,8 +129,9 @@ var init = function (window) {
         game.update = update;
         
         app.addUpdateable(window.opspark.game);
-    
-
+                  
+        }
+    }
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
